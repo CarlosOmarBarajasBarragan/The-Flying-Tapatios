@@ -1,0 +1,71 @@
+name: Functional Idea
+description: Document a functional idea discovered during requirements elicitation
+title: "[Idea] "
+labels: []
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ReUse ITESO — Functional Idea
+
+        Use this form to document one functional idea discovered during requirements elicitation.
+
+        At this stage, ideas are **not yet formal requirements, User Stories, Use Cases, or Acceptance Criteria**.
+
+  - type: textarea
+    id: functional_idea
+    attributes:
+      label: Functional Idea
+      description: Describe one functional idea clearly. Keep the idea focused on one action or expected system behavior.
+      placeholder: Describe the functional idea here.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: epic
+    attributes:
+      label: Epic
+      description: Select the functional Epic associated with this idea.
+      options:
+        - User Account Management & Authentication
+        - Menu Updates
+        - Food Item Search & Discovery
+        - Order Placement
+        - Order Fulfillment
+        - Payment & Transaction Handling
+        - Alerts & Notifications
+        - Analytics & Service Review
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Elicitation Source
+      description: Identify where this functional idea was discovered.
+      options:
+        - Brainstorming
+        - Sponsor Interview
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: contributor
+    attributes:
+      label: Original Contributor
+      description: Enter the name of the student who originally proposed or documented this idea.
+      placeholder: First name and last name
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Optional additional context needed to understand the idea.
+      placeholder: Add context only if necessary.
+    validations:
+      required: false
