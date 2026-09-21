@@ -38,17 +38,31 @@ Functionality related to user access, identity, participation in the platform, a
 
 ### 2. Menu Updates
 
+Functionality that let's business modify their menus in things like availability.
+
 ### 3. Food item search and discovery
+
+Functionality made so the user can search in less than 5 minutes.
 
 ### 4. Order placement
 
+Functionality made so the user can edit freely their order with certain indications like allergies, if it's take out.
+
 ### 5. Order fulfillment
+
+Functionality that let's the user know an estimated time for food preparation. As well as how the process will be for the staff.
 
 ### 6. Payment and transaction handling
 
+How is the payment received and even the money return if the order couldn't be processed.
+
 ### 7. Alerts and notifications
 
+Functionality so the user receives alerts depending on the status of their order. As well as for the cafeteria staff.
+
 ### 8. Analytics and service review
+
+Functionality so the users can leave reviews and the vendors can have stats.
 
 ## Current Requirements Stage
 
