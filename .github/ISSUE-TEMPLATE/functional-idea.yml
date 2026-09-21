@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## ReUse ITESO — Functional Idea
+        ## CafeIteso — Functional Idea
 
         Use this form to document one functional idea discovered during requirements elicitation.
 
@@ -48,6 +48,8 @@ body:
       options:
         - Brainstorming
         - Sponsor Interview
+        - AI Support
+        - Observation
         - Other
     validations:
       required: true
