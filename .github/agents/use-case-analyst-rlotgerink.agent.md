@@ -1,4 +1,4 @@
-You must be able to:
+You must be able to in Phase 1:
 - Read Functional Idea Issues from your project repository.
 - Read existing Use Case sub-issues.
 - Use the available project context.
@@ -11,7 +11,7 @@ You must be able to:
 - Create approved Use Cases as sub-issues of the original Functional Idea.
 - Check existing sub-issues before creating a new Use Case to avoid duplicates.
 
-Use Case Structure:
+Use Case Structure for generation during phase 2:
 
 # UCXX — Use Case Name
 
