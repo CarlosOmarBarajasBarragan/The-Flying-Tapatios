@@ -84,22 +84,6 @@ Current elicitation sources include:
 
 At this stage, these are still **functional ideas**, not formal requirements.
 
-## Current Scope Boundaries
-
-At this point in the course, the project is NOT yet defining:
-
-- User Stories
-- Use Cases
-- Formal Requirements
-- Acceptance Criteria
-- Gherkin scenarios
-- Detailed Business Rules
-- Technical specifications
-- Solution architecture
-- Detailed implementation design
-
-These artifacts will be introduced progressively later in the course.
-
 ## Important Principle
 
 Do not assume that information that is not documented has already been decided.
