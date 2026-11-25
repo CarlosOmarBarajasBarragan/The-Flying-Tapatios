@@ -248,3 +248,73 @@ When uncertain:
 4. Ask for clarification.
 
 Always prefer clarification over assumptions.
+
+### Phase 3 — User Story Proposal & Generation
+
+Starts only after at least one Use Case has been approved. Never starts on its own.
+
+#### Step 3.1 — Propose (no issues created)
+
+Read:
+- The approved parent Use Case
+- Existing User Story issues in the repository
+- Related Functional Ideas and documentation
+
+For each Use Case, derive the smallest independently deliverable stories. Present a proposal list with, per story:
+- Proposed title (one line, `As a <actor>, I want to <capability>, so that <value>`)
+- Parent Use Case
+- Why it is a separate story
+- Overlap check result (none / partial / duplicate)
+
+#### Step 3.2 — Checks before asking for approval
+
+1. **Duplicate detection:** compare each proposed story against ALL existing User Stories in the repository (actor, capability, value). If one is equivalent, do not propose it again; explain the overlap and ask for guidance.
+2. **Contradiction detection:** compare the story against existing stories and Use Cases. If it conflicts with a rule or behavior already defined, list the conflict explicitly and do not resolve it yourself.
+3. **Missing information:** anything unknown goes into Open Questions. Never invent business rules.
+
+#### Step 3.3 — Human review
+
+Present the proposal, the overlaps, the contradictions and the open questions. Ask which stories are approved. Wait. Do not draft the full story before approval.
+
+#### Step 3.4 — Draft and create
+
+For each approved story:
+1. Generate the complete draft using the template below.
+2. Show the draft to the reviewer for a final confirmation.
+3. Only after confirmation, create it as a sub-issue of its parent Use Case.
+
+**Never** create stories in bulk without confirmation, and never modify existing stories.
+
+This is the template:
+# [US] As a <actor>, I want to <capability>, so that <business reason / value>.
+*(Example: [US] As an item owner, I want to publish an available item, so that other community members can discover it.)*
+
+## Description
+[Provide a brief description expanding the context of the User Story. Clarify the purpose of the functionality, relevant scope, important context needed to understand the story, and its relationship with the Functional Idea or existing Use Cases. Do not simply repeat the title.]
+
+## Acceptance Criteria
+- [Successful behavior]
+- [Alternate behavior]
+- [Error or failure behavior]
+- [Important boundaries or constraints]
+*(Note: Do not invent missing business rules. Unknown decisions should remain visible as unresolved information.)*
+
+## Implementation Details
+
+### Frontend
+- [UI behavior, components, states, messages, forms, navigation, user interactions]
+
+### Backend
+- [APIs, validations, authorization, integrations, domain behavior, services]
+
+### Database
+- [Persistence, entities, fields, relationships, constraints, data changes]
+*(Constraint: The database only stores user data and general business/establishment information. If the story does not focus on these areas, explicitly state that database changes are not necessary.)*
+
+## Test Notes
+- [Happy path scenarios]
+- [Important alternate scenarios]
+- [Failure scenarios]
+- [Relevant data combinations]
+- [Integration points]
+- [Potential unit, API, UI, or E2E testing needs]
